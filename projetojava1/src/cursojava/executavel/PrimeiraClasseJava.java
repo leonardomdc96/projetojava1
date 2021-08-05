@@ -40,11 +40,10 @@ public class PrimeiraClasseJava {
 		aluno1.setNota3(Double.valueOf(nota3));
 		aluno1.setNota4(Double.valueOf(nota4));
 		
+	
+		System.out.println(aluno1.toString());
 		
-		System.out.println("nome é " + aluno1.getNome());		
-		System.out.println("media é " + aluno1.getMediaNota());
-		/*OPERADOR TERNARIO*/
-		System.out.println("resultado = " + (aluno1.getAlunoAprovado() ? "aprovado" : "reprovado"));
+		
 		
 		
 		
