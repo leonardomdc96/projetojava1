@@ -25,7 +25,7 @@ public class PrimeiraClasseJava {
 		
 		Aluno aluno1 = new Aluno();  
 		aluno1.setNome(nome);
-		aluno1.setIdade(Integer.valueOf(idade));
+		aluno1.setIdade(Integer.parseInt(idade));
 		aluno1.setDataNascimento(dataNascimento);
 		aluno1.setRegistroGeral(registroGeral);
 		aluno1.setNumeroCpf(numeroCpf);
@@ -35,15 +35,14 @@ public class PrimeiraClasseJava {
 		aluno1.setNomeEscola(nomeEscola);
 		aluno1.setNomeMae(nomeMae);
 		aluno1.setSerieMatriculado(serieMatriculado);
-		aluno1.setNota1(Double.valueOf(nota1));
-		aluno1.setNota2(Double.valueOf(nota2));
-		aluno1.setNota3(Double.valueOf(nota3));
-		aluno1.setNota4(Double.valueOf(nota4));
+		aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
+		aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
+		aluno1.getDisciplina().setNota3(Double.parseDouble(nota3));
+		aluno1.getDisciplina().setNota4(Double.parseDouble(nota4));
 		
 	
 		System.out.println(aluno1.toString());
-		
-		
+		System.out.println("Situação: " + (aluno1.getAlunoAprovado() ? "aprovado" : "reprovado"));
 		
 		
 		
